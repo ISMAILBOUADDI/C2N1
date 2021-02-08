@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff url("/images/bg-pattern-top-desktop.svg");
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+.top h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.top p {
+    font-size: 1em;
+}
+/* .ratings{
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr; 
+    grid-template-areas:     "one one .."     "..tree tree";
+}
+.review{
+    grid-area: one;
+}
+.Guru{
+    grid-area: two;
+}
+.BestTech-rating{
+    grid-area: tree;
+} */
+.coustmer-rating {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F7F2F8;
+    padding: .7em 1.5em;
+    margin-bottom: .8em;
+    font-size: .7em;
+    font-weight: 400;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.img{
+    margin-right: 1em;
+}
+.Guru-rating {
+    margin-left: 2em;
+}
+
+.BestTech-rating {
+    margin-left: 4em;
+}
+.bottom{
+    margin-top: 50px ;
+}
+/* .comment-cards { 
+    display: flex;
+    justify-content: space-between;
+} */
+
+.card {
+    width: 300px;
+    height: 200px;
+    background-color:hsl(300, 43%, 22%) ;
+    margin-right: 1em;
+    padding: 25px 15px;
+    border-radius: 8px;
+}
+.profile{
+display: flex;
+flex-direction: row-reverse;
+/* align-items: center; */
+;
+justify-content: space-between;
+}
+.profile img{
+    width: 50px;
+    border-radius: 100px; 
+}
+.profile-detail{
+    margin-right: 114px;
+}
+.comment-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4px 5px 1fr 5px 5px;
+    gap: 10px;
+    grid-template-areas: 
+    "CART1 . ."
+    "CART1 CART2 ."
+    "CART1 CART2 CART3"
+    ". CART2 CART3"
+    ". . CART3" ;
+    
+}
+.colton-cards{
+    grid-area:CART1 ;
+}
+.irene-card{
+    grid-area:CART2 ;
+
+}
+.anne-card{
+    grid-area:CART3 ;
+}
+.profile h3{
+      font-size: 0.9em;
+      color: hsl(300, 24%, 96%);
+}
+.profile h4{
+    font-size: 0.6em;
+    color:  hsl(303, 10%, 53%);
+    margin-top: 7px;
+}
+.review p{
+     font-size: 0.8em;
+     color:   hsl(300, 24%, 96%);
+     margin-top: 20px;
+     line-height: 1.8;
+}
+@media (max-width: 375px) {
+    .top h1 {
+        font-size: 2em;
+        margin-bottom: .9em;
+    }
+    .top p {
+        font-size: .9em;
+        margin-bottom: 20px;
+    }
+
+    .Guru-rating {
+        margin-left: 0;
+    }
+
+    .BestTech-rating {
+        margin-left: 0;
+    }
+
+    .coustmer-rating > .img,
+    .coustmer-rating > .text {
+        margin: auto;
+    }
+
+    .coustmer-rating > .img {
+        margin-bottom: 10px;
+    }
+
+    .comment-cards {
+        display: block;
+    }
+
+    .comment-cards .card {
+        margin-bottom: 20px;
+    }
+
+    .review p {
+        font-size: 0.8em;
+        color: hsl(300, 24%, 96%);
+        margin-top: 20px;
+    }
+    
+}
+
+
+
+
+
+
+
+

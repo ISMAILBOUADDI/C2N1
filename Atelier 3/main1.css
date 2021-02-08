@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+
+}
+.container{
+    max-width: 1440px;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-areas:
+    "BOX1 BOX1 BOX2 BOX5"
+    "BOX3 BOX4 BOX4 BOX5";
+}
+img{
+    border-radius: 50%;
+    margin: 20px;
+    width: 25px;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/* h1 {
+    font-size: .8em;
+     color: white;
+
+} */
+.card{
+    border-radius: 10px;
+    padding: 15px;
+}
+.card-one{
+    background-color: hsl(263, 55%, 52%);
+    grid-area: BOX1;
+}
+.card-two{
+    background-color: hsl(217, 19%, 35%);
+    grid-area: BOX2;
+
+}
+.card-three{
+    background-color: hsl(0, 0%, 100%)
+    ;
+    grid-area: BOX3;
+
+}
+.card-foure{
+    background-color: hsl(219, 29%, 14%);
+    grid-area: BOX4;
+
+}
+.card-five{
+    background-color:hsl(0, 0%, 100%)
+    ;
+    grid-area: BOX5;
+
+}
+p{ 
+    color:rgb(255, 255,255,75%);
+}
+h1{
+    color:rgb(255, 255,255) ;
+}
+strong{
+   color:  rgb(255, 255,255);
+}
+h2{
+    color:rgb(255, 255,255,50%) ;
+}
+.color{
+    Color:rgb(0,0,0);
+}
+.color1{
+    Color:rgb(0,0,0, 50%);
+
+}
+.color3{
+    Color:rgb(0,0,0);
+
+}
+.color4{
+    Color:rgb(0,0,0,75%);
+
+}
+.profile h1 ,.profile h2 {
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+@media (max-width: 375px){
+    .container{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* .card{
+        width: 300px;
+    }
+    */
+}
